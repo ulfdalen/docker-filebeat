@@ -1,0 +1,11 @@
+version: '3'
+services:
+  filebeat:
+    image: ulfdalen/docker-filebeat:latest
+    environment:
+      LOGSTASH_HOST: ${LOGSTASH_HOST}
+      LOGSTASH_PORT: ${LOGSTASH_PORT}
+      LOG_PATH_DIR: "/var/log/docker/"
+      LOG_DOC_TYPE: "docker-logs"
+    volumes:
+      - /var/log/docker:/var/log/docker
