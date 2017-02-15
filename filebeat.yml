@@ -87,7 +87,7 @@ filebeat.prospectors:
   #password: "changeme"
 
 #----------------------------- Logstash output --------------------------------
-#output.logstash:
+output.logstash:
   # The Logstash hosts
   hosts: ["LOGSTASH_HOST:LOGSTASH_PORT"]
 
