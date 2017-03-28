@@ -90,6 +90,8 @@ filebeat.prospectors:
 output.logstash:
   # The Logstash hosts
   hosts: ["LOGSTASH_HOST:LOGSTASH_PORT"]
+  
+  compression_level: 6
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
