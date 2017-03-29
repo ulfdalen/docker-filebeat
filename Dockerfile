@@ -1,7 +1,7 @@
 FROM    alpine:latest
 
 # Build variables
-ENV     FILEBEAT_VERSION 5.2.2
+ENV     FILEBEAT_VERSION 5.3.0
 ENV     FILEBEAT_URL https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-${FILEBEAT_VERSION}-linux-x86_64.tar.gz
 
 # Environment variables
